@@ -10,102 +10,81 @@
 
 <!-- NAVBAR -->
 <nav>
-  <h1>VAKYASETU</h1>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="project.html">Project</a></li>
-    <li><a href="technology.html">Technology</a></li>
-    <li><a href="team.html">Team</a></li>
-  </ul>
+  <div class="brand">
+    <h1>VAKYASETU</h1>
+    <div class="tag">MANAS</div>
+  </div>
+  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  <div class="nav-links">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="technology.html">Technology</a></li>
+      <li><a href="team.html">Team</a></li>
+    </ul>
+  </div>
 </nav>
 
 <!-- MAIN CONTENT -->
 <section>
-
-  <!-- OVERVIEW -->
-  <div class="panel">
-    <h2>System Architecture</h2>
-    <p>
-      Vakyasetu is built on a layered architecture that tightly integrates hardware sensing
-      with software-based interpretation. The system is designed to be modular, transparent,
-      and efficient, ensuring that each component can be independently improved or replaced
-      without disrupting the entire workflow.
-    </p>
+  <div class="hero">
+    <div class="container">
+      <h1>Technology 🔬</h1>
+      <p>Layered, explainable and efficient — designed for real users and real-world constraints.</p>
+    </div>
   </div>
 
-  <!-- PIPELINE -->
-  <div class="panel">
-    <h2>End-to-End Processing Pipeline</h2>
-    <p>
-      The core operation of Vakyasetu follows a structured signal flow:
-    </p>
-    <p>
-      Touch Input → Signal Acquisition → Data Normalization → Matrix-Based Mapping → Output Generation
-    </p>
-    <p>
-      This pipeline ensures that raw physical interactions are converted into meaningful
-      communication outputs with minimal latency and high consistency.
-    </p>
-  </div>
+  <div class="container">
+    <div class="panel">
+      <h2>System Architecture</h2>
+      <p>
+        Vakyasetu is built on a layered architecture that tightly integrates hardware sensing
+        with software-based interpretation. The system is modular, transparent, and efficient.
+      </p>
+    </div>
 
-  <!-- HARDWARE -->
-  <div class="panel">
-    <h2>Hardware Layer</h2>
-    <p>
-      The hardware layer consists of touch sensors positioned to capture intentional hand
-      interactions. These sensors are selected for sensitivity and reliability, allowing
-      the system to detect even low-force inputs.
-    </p>
-    <p>
-      Sensor data is routed through a microcontroller interface, where it is digitized and
-      prepared for software-level processing. The design prioritizes comfort, low power
-      consumption, and ease of integration.
-    </p>
-  </div>
+    <div class="panel">
+      <h2>Processing Pipeline</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Acquisition</h3>
+          <p>Low-noise capture and digitization of touch signals at the edge.</p>
+        </div>
+        <div class="card">
+          <h3>Normalization</h3>
+          <p>Standardize inputs so mappings remain stable across sessions.</p>
+        </div>
+        <div class="card">
+          <h3>Mapping</h3>
+          <p>Matrix-based interpretation for predictable, fast lookup-based decoding.</p>
+        </div>
+      </div>
+    </div>
 
-  <!-- SOFTWARE -->
-  <div class="panel">
-    <h2>Software Layer</h2>
-    <p>
-      The software system is implemented using Python and is responsible for interpreting
-      incoming sensor data. Instead of relying on heavy machine learning models, the system
-      uses structured logic to maintain transparency and predictability.
-    </p>
-    <p>
-      This approach allows developers and researchers to clearly understand how inputs
-      translate into outputs, making the system easier to debug, optimize, and adapt.
-    </p>
+    <div class="panel">
+      <h2>Architecture Visualization 📊</h2>
+      <p>
+        Visual representation of the system flow and architecture:
+      </p>
+      <div class="gallery">
+        <div class="gallery-item" data-modal data-media-type="image" data-media-path="assets/flow-chart.jpeg">
+          <img src="assets/flow-chart.jpeg" alt="System Flow Chart">
+          <div class="play-button">👁️</div>
+          <div class="gallery-item-title">Processing Flow</div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <!-- MATRIX LOGIC -->
-  <div class="panel">
-    <h2>Matrix-Based Interpretation Logic</h2>
-    <p>
-      At the core of the software layer lies a matrix-based mapping mechanism. Each sensor
-      input pattern corresponds to a predefined position within a logical matrix that
-      represents specific words, phrases, or commands.
-    </p>
-    <p>
-      This method enables fast lookups, reduced computational overhead, and deterministic
-      behavior—critical properties for assistive communication systems.
-    </p>
-  </div>
-
-  <!-- DESIGN PHILOSOPHY -->
-  <div class="panel">
-    <h2>Design Philosophy</h2>
-    <p>
-      Vakyasetu is intentionally designed to avoid invasive techniques and opaque decision
-      systems. The emphasis is placed on user dignity, system reliability, and long-term
-      adaptability.
-    </p>
-    <p>
-      Every design decision is guided by the principle that assistive technology should
-      empower users without introducing unnecessary complexity.
-    </p>
-  </div>
-
 </section>
+
+<footer>
+  <div class="container">© MANAS • Vakyasetu — Ethical by design.</div>
+</footer>
+
+<!-- Modal for media viewing -->
+<div id="mediaModal" class="modal">
+  <div class="modal-content"></div>
+</div>
 
 <script src="js/main.js"></script>
 </body>
