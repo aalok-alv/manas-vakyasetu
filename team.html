@@ -10,102 +10,83 @@
 
 <!-- NAVBAR -->
 <nav>
-  <h1>VAKYASETU</h1>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="project.html">Project</a></li>
-    <li><a href="technology.html">Technology</a></li>
-    <li><a href="team.html">Team</a></li>
-  </ul>
+  <div class="brand">
+    <h1>VAKYASETU</h1>
+    <div class="tag">MANAS</div>
+  </div>
+  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  <div class="nav-links">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="technology.html">Technology</a></li>
+      <li><a href="team.html">Team</a></li>
+    </ul>
+  </div>
 </nav>
 
 <!-- MAIN CONTENT -->
 <section>
-
-  <!-- TEAM INTRO -->
-  <div class="panel">
-    <h2>The Team</h2>
-    <p>
-      Vakyasetu is developed under the <strong>MANAS</strong> initiative, a collaborative
-      effort focused on creating human-centered assistive technologies. The team operates
-      with a research-first mindset, emphasizing learning, experimentation, and responsible
-      engineering.
-    </p>
+  <div class="hero">
+    <div class="container">
+      <h1>Team & Vision 🤝</h1>
+      <p>Cross-disciplinary team building respectful, dependable assistive systems.</p>
+    </div>
   </div>
 
-  <!-- TEAM STRUCTURE -->
-  <div class="panel">
-    <h2>Team Structure</h2>
-    <p>
-      The project is built through interdisciplinary collaboration. Each member contributes
-      across multiple domains while maintaining clear responsibility areas to ensure system
-      integrity and progress.
-    </p>
-    <p>
-      Core contribution areas include hardware development, software engineering, system
-      integration, documentation, and research analysis.
-    </p>
-  </div>
+  <div class="container">
+    <div class="panel">
+      <h2>The Team</h2>
+      <p>
+        Vakyasetu is developed under the <strong>MANAS</strong> initiative — a collaborative
+        effort focused on creating human-centered assistive technologies with care and rigor.
+      </p>
+    </div>
 
-  <!-- MANAS -->
-  <div class="panel">
-    <h2>The MANAS Initiative</h2>
-    <p>
-      MANAS is a learning-driven initiative aimed at developing accessible and ethical
-      technology solutions. Projects under MANAS focus on real-world problems, especially
-      those affecting individuals with limited access to advanced technological resources.
-    </p>
-    <p>
-      Vakyasetu represents one such effort, combining practical engineering with social
-      responsibility.
-    </p>
-  </div>
+    <div class="panel">
+      <h2>Core Contributors</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Lead Researcher 👩‍🔬</h3>
+          <p>Research direction, ethics, and user studies.</p>
+        </div>
+        <div class="card">
+          <h3>Hardware Engineer 🔧</h3>
+          <p>Sensor design, PCB prototypes, and durability testing.</p>
+        </div>
+        <div class="card">
+          <h3>Software Engineer 💻</h3>
+          <p>Signal processing, mapping logic, and user-facing software.</p>
+        </div>
+      </div>
+    </div>
 
-  <!-- VISION -->
-  <div class="panel">
-    <h2>Vision</h2>
-    <p>
-      The long-term vision of Vakyasetu is to contribute toward a future where communication
-      barriers caused by physical limitations can be reduced through simple, affordable,
-      and adaptable technology.
-    </p>
-    <p>
-      The project does not aim to replace existing medical or therapeutic solutions, but to
-      complement them by providing additional tools for expression and interaction.
-    </p>
+    <div class="panel">
+      <h2>Project Highlights 🎯</h2>
+      <div class="gallery">
+        <div class="gallery-item" data-modal data-media-type="image" data-media-path="assets/pic-demo.jpeg">
+          <img src="assets/pic-demo.jpeg" alt="Team with Prototype">
+          <div class="play-button">👁️</div>
+          <div class="gallery-item-title">Prototype Development</div>
+        </div>
+        <div class="gallery-item" data-modal data-media-type="image" data-media-path="assets/pic-demo1.jpeg">
+          <img src="assets/pic-demo1.jpeg" alt="Device Testing">
+          <div class="play-button">👁️</div>
+          <div class="gallery-item-title">Live Testing</div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <!-- ROADMAP -->
-  <div class="panel">
-    <h2>Roadmap</h2>
-    <p>
-      <strong>Short-Term:</strong> Improve sensor reliability, refine signal interpretation,
-      and conduct controlled user testing.
-    </p>
-    <p>
-      <strong>Mid-Term:</strong> Expand gesture vocabulary, enhance software adaptability,
-      and improve system modularity.
-    </p>
-    <p>
-      <strong>Long-Term:</strong> Collaborate with researchers and institutions, explore
-      integration with other assistive systems, and study scalability options.
-    </p>
-  </div>
-
-  <!-- ETHICS -->
-  <div class="panel">
-    <h2>Ethical Commitment</h2>
-    <p>
-      Vakyasetu is built with a strong ethical foundation. User dignity, transparency,
-      and non-invasive assistance guide every design decision.
-    </p>
-    <p>
-      The team remains committed to responsible development, ensuring that technology
-      empowers users without introducing dependency or unnecessary complexity.
-    </p>
-  </div>
-
 </section>
+
+<footer>
+  <div class="container">© MANAS • Vakyasetu — Team-focused, user-first.</div>
+</footer>
+
+<!-- Modal for media viewing -->
+<div id="mediaModal" class="modal">
+  <div class="modal-content"></div>
+</div>
 
 <script src="js/main.js"></script>
 </body>
