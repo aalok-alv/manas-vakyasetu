@@ -9,34 +9,65 @@
 <body>
 
 <nav>
-  <h1>VAKYASETU</h1>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="project.html">Project</a></li>
-    <li><a href="technology.html">Technology</a></li>
-    <li><a href="team.html">Team</a></li>
-  </ul>
+  <div class="brand">
+    <h1>VAKYASETU</h1>
+    <div class="tag">MANAS</div>
+  </div>
+  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  <div class="nav-links">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="technology.html">Technology</a></li>
+      <li><a href="team.html">Team</a></li>
+    </ul>
+  </div>
 </nav>
 
 <section>
-  <div class="panel">
-    <h2>A Bridge Between Intent and Expression</h2>
-    <p>
-      Vakyasetu is an assistive communication system developed under the MANAS initiative.
-      It enables paralysed individuals to express intent using simple touch-based hand interactions,
-      translating signals into meaningful communication through structured software logic.
-    </p>
+  <div class="hero">
+    <div class="container">
+      <h1>Vakyasetu — A Bridge Between Intent & Expression ✨</h1>
+      <p>Assistive communication for people with limited mobility — simple, reliable, human-centered.</p>
+      <a class="cta" href="project.html">Explore the Project →</a>
+    </div>
   </div>
 
-  <div class="panel">
-    <h2>Why It Matters</h2>
-    <p>
-      Communication should not depend on speech or full mobility.
-      Vakyasetu focuses on accessibility, affordability, and dignity—bridging the gap
-      between human intent and technological expression.
-    </p>
+  <div class="container">
+    <div class="panel">
+      <h2>Overview</h2>
+      <p>
+        Vakyasetu is an assistive communication system developed under the MANAS initiative.
+        It enables paralysed individuals to express intent using simple touch-based hand interactions,
+        translating signals into meaningful messages through transparent, matrix-driven logic.
+      </p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Accessible</h3>
+        <p>Designed for low-cost deployment and easy use — minimal calibration required. ♿</p>
+      </div>
+      <div class="card">
+        <h3>Transparent</h3>
+        <p>Matrix-based logic ensures predictable and explainable behaviour. 🔍</p>
+      </div>
+      <div class="card">
+        <h3>Adaptable</h3>
+        <p>Modular hardware and software make iteration and customization straightforward. ⚙️</p>
+      </div>
+    </div>
   </div>
 </section>
+
+<footer>
+  <div class="container">© MANAS • Vakyasetu — Built with care and ethics.</div>
+</footer>
+
+<!-- Modal for media viewing -->
+<div id="mediaModal" class="modal">
+  <div class="modal-content"></div>
+</div>
 
 <script src="js/main.js"></script>
 </body>
